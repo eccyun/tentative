@@ -10,5 +10,6 @@ deploy:
   endpoint: eccyun.me.s3-website-ap-northeast-1.amazonaws.com
   region: ap-northeast-1
   local-dir: build/
+  upload-dir: blog/
   on:
     branch: master
