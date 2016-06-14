@@ -1,4 +1,5 @@
 language: html
+script: ""
 deploy:
   provider: s3
   bucket: eccyun.me
