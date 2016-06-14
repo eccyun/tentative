@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>てんてーちぶ  - ぺちぱな。Q 〜たまには決められた通りに繰り返すのもいい〜 でenchant.jsを使ってゲームづくりのハンズオンをやりました</title>
+        <meta name="description" content="eccyunの個人ページ" />
+        <meta name="keywords" content="eccyun" />
+        <meta name="author" content="eccyun" />
+        <meta name="copyright" content="Copyright (C) eccyun.me" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <style>
+            body {
+                padding-top: 60px;
+            }
+        </style>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+        	<link type="text/css" rel="stylesheet" href="http://eccyun.me/blog/assets/css/bootstrap.min.css?1444838779" />
+        	<link type="text/css" rel="stylesheet" href="http://eccyun.me/blog/assets/css/bootstrap-responsive.min.css?1444838780" />
+        	<link type="text/css" rel="stylesheet" href="http://eccyun.me/blog/assets/css/main.css?1444844044" />
+        	<script type="text/javascript" src="http://eccyun.me/blog/assets/js/vendor/jquery-1.9.1.min.js?1444838782"></script>
+        	<script type="text/javascript" src="http://eccyun.me/blog/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js?1444838782"></script>
+        	<script type="text/javascript" src="http://eccyun.me/blog/assets/js/vendor/bootstrap.min.js?1444838782"></script>
+        	<script type="text/javascript" src="http://eccyun.me/blog/assets/js/main.js?1444838781"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h1>
+                            <a href="http://eccyun.me/blog/">
+                                てんてーちぶ
+                            </a>
+                        </h1>
+                        <h2 id="sub_title">
+                            来るべき日に向けて備えよ、努力は報われる
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main_block">
+            <!-- content start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-9 col-md-9">
+                        <article class="article_block">
+	<h3>
+		<a href="http://eccyun.me/blog/article/phper-na-9th/">
+	        ぺちぱな。Q 〜たまには決められた通りに繰り返すのもいい〜 でenchant.jsを使ってゲームづくりのハンズオンをやりました        </a>
+	</h3>
+	<time class="date">
+		2014/07/21 23:45:08	</time>
+	<div class="category_block">
+		<i class="glyphicon glyphicon-tags"></i>
+		event.eccyun.	</div>
+	<div class="clear">&nbsp;</div>
+	<p>ぺちぱな。Q 〜たまには決められた通りに繰り返すのもいい〜<br /><a href="http://atnd.org/events/53496" target="_blank">http://atnd.org/events/53496</a><br /><br /><br />掲題のイベントでハンズオンを行いました。<br />今回のようにフルタイムで行うのは2回目でした。<br /><br />発表資料は下記リンクからどうぞ<br /><br /><a href="http://eccyun.github.io/phper-na-Q/Guide/" target="_blank">http://eccyun.github.io/phper-na-Q/Guide/</a><br /><br />資料は見れる所を準備したので、ここの記事でははじまりのところとか、準備中のところとかその辺のことを残していきます。<br />そういえばgithub pagesが結構便利でした。今後ちょっと使い方とかは模索していこうかなと思っています。<br /><br /><br />●　はじまり<br /><br />もともと、お話があったのは777のちょい後くらいでした。(多分<br />∞の開催前くらいには9はどうしようって話になってきて、具体的にそこから話が動き出したような感じだったと思います。<br /><br />それで「ゲームやろう、enchant.jsで」っていうところにまとまって、調査をはじめていきました。<br /><br />●　プログラムなど<br /><br />ある程度モデルを決めて、それに沿ってどんな感じで作れるかと言うのをやっていくところからはじめました。<br />「Flappy Birdライクなものを作ろう」という話もあったので、取り掛りとしてひとまずそこを目指す事にしました。<br />思ってたより実装は簡単で、これなら結構良いところまでやれそう。みたいな感じになりました。<br />前回もそうでしたけど、プログラムを先に作ってから構成要素を分解して解説が必要なところのリストアップなんかもこの時に行っていました。<br /><br />●　資料の構成<br /><br />前回やった時に、手法に関してはそこそこ良かったかもと思ってたので、今回も同じやり方を採用する事にしました。<br /><br />出来る限り材料を多く並べておいて、それを選びながら後から組んでいくみたいな方式です。<br /><br />前回は喋りの部分が長くなるところが多かったので、手を動かして話を聞いてまた手を動かすまでの話の部分を出来るだけ短くするように気をつけて作ろうと思いました。<br /><br />ものの・・・実際は導入のところは思ってた以上に長くなってしまいました・・・頭の中も真っ白になっていって駄目でした。<br /><br />外枠を簡単にですが、定義してそれをもとに資料を作っていきました。<br /><br />サンプルの内容については、出来るだけ新しい要素は入れないように気をつけました。ゲームの動き方の大きな流れを知る事がテーマだったからです。<br /><br />●　発表<br /><br />前半がしどろもどろ過ぎて、酷かったのですが<br />中盤からは少しだけ落ち着いて話せるようになりました。<br /><br />前回やった時は途中で正直がちへこみするところもあったりして、そういう様子が出ちゃったりしてたんですが、今回はそこまで気落ちする事もなく進めることが出来ました。この辺は少し成長したところかもしれません。<br /><br />とは言っても、まだまだ課題が多く残る結果となってしまいました。<br /><br />参加している皆さんがゴリゴリ作っていってて、いろんな追加機能を入れたりしてる人もいて、そういうのにすごく助けられたところがありました。こういうことを発表した人が言って良いのかわかりませんが・・・。<br /><br />●　総括<br /><br />反省する所はいっぱいあるんですが、今回は進め方に問題がある部分が多すぎて、個人的にはそこが一番の反省点だったように思います。<br />これはいけないみたいなのはありましたし、次回は同じような事にならないようにしたい。そこが変わってくると、またいろいろ変わるところもあると思うので・・・。<br /><br />ただ、ゲームをテーマにやる事が出来たのは非常に嬉しかったです。<br /><br />今回の内容を足がかりにして、時間内に機能を拡張してみたりとかそんなことをしてる人達もいたりして、そういうのを見てると益々そんな気持ちになりました。<br /><br /><br />終わってからは、懇親会でした〜。</p>
+</article>
+<hr>
+                    </div>
+                	<div class="col-xs-12 col-sm-3 col-md-3 mobile-hidden">
+                        <div class="side_block">
+                            <h4>えんとりー</h4>
+                            <ul id="entry_list">
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/sg-0/">
+                                            Steins;Gate 0                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/review-2015/">
+                                            2015年総括                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/macbook-mid-2012-buy/">
+                                            Macbook Pro 15 inch mid 2012 を買いました                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/appworkshop-30-announce/">
+                                            Appworkshop #30のお知らせ                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/granrodeo-tour-2015/">
+                                            GRANRODEO LIVE TOUR 2015 カルマとラビリンス @ 福岡サンパレス                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/torecon-2015/">
+                                            録れコン2015                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/eccyun-recent-150308/">
+                                            最近のえっくん                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/phper-na-extend/">
+                                            ぺちぱな。延長戦 〜あの人たちが居なくなるその前に〜                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/makes-music-everyday-2015-9/">
+                                            毎日作曲(録れコン2015) - 9                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/makes-music-everyday-2015-8/">
+                                            毎日作曲(録れコン2015) - 8                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/makes-music-everyday-2015-7/">
+                                            毎日作曲(録れコン2015) - 7                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/makes-music-everyday-2015-6/">
+                                            毎日作曲(録れコン2015) - 6                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/makes-music-everyday-2015-5/">
+                                            毎日作曲(録れコン2015) - 5                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/makes-music-everyday-2015-4/">
+                                            毎日作曲(録れコン2015) - 4                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://eccyun.me/blog/article/makes-music-everyday-2015-3/">
+                                            毎日作曲(録れコン2015) - 3                                        </a>
+                                    </li>
+                                                            </ul>
+                        </div>
+
+
+                        <div class="side_block">
+                            <h4>かいているひと</h4>
+                            <div class="prof_photo thumbnail">
+                                <img width="60" height="60" src="http://eccyun.me/blog/assets/img/eccyun.png?1444838781" alt="" />                            </div>
+                            <div class="prof_text">
+                                <h4>eccyun</h4>
+                                <p style="margin-top : 0px;">
+                                    <a href="http://eccyun.me/blog/about/" target="_blank">あばうと</a>
+                                </p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="side_block">
+                            <h4>ついったー</h4>
+                            <a class="twitter-timeline" href="https://twitter.com/eccyun" data-widget-id="367502197904252928">@eccyun からのツイート</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+
+                        <div class="side_block">
+                            <h4>おと</h4>
+                            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/68854512&color=ff5500&auto_play=false&hide_related=false&show_artwork=true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <h5>eccyun.me</h5>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-54903415-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
