@@ -15,7 +15,7 @@
 
         	<link type="text/css" rel="stylesheet" href="http://eccyun.me/blog/assets/css/bootstrap.min.css?1444838779" />
         	<link type="text/css" rel="stylesheet" href="http://eccyun.me/blog/assets/css/bootstrap-responsive.min.css?1444838780" />
-        	<link type="text/css" rel="stylesheet" href="http://eccyun.me/blog/assets/css/main.min.css?1494770798" />
+        	<link type="text/css" rel="stylesheet" href="http://eccyun.me/blog/assets/css/main.min.css?1494771903" />
         	<script type="text/javascript" src="http://eccyun.me/blog/assets/js/main.min.js?1494428875"></script>
         	<script type="text/javascript" src="http://eccyun.me/blog/assets/js/vendor/jquery-1.9.1.min.js?1444838782"></script>
         	<script type="text/javascript" src="http://eccyun.me/blog/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js?1444838782"></script>
@@ -23,49 +23,50 @@
 
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <h1>
-                            <a href="http://eccyun.me/blog/">
-                                てんてーちぶ
-                            </a>
-                        </h1>
-                        <h2 id="sub_title">
-                            来るべき日に向けて備えよ、努力は報われる
-                        </h2>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 my-mergin-top">
-                        <ul class="nav nav-pills nav-justified">
-                            <li role="presentation">
+        <div id="wrapper">
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h1>
                                 <a href="http://eccyun.me/blog/">
-                                    ホーム
+                                    てんてーちぶ
                                 </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="http://eccyun.me/blog/about/">
-                                    自己紹介
-                                </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="https://twitter.com/eccyun/" target="_blank">
-                                    Twitter
-                                </a>
-                            </li>
-                        </ul>
+                            </h1>
+                            <h2 id="sub_title">
+                                来るべき日に向けて備えよ、努力は報われる
+                            </h2>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 my-mergin-top">
+                            <ul class="nav nav-pills nav-justified">
+                                <li role="presentation">
+                                    <a href="http://eccyun.me/blog/">
+                                        ホーム
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="http://eccyun.me/blog/about/">
+                                        自己紹介
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="https://twitter.com/eccyun/" target="_blank">
+                                        Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <div id="main_block">
-            <!-- content start -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <article class="article_block">
+            <div id="main_block">
+                <!-- content start -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <article class="article_block">
 	<h3>
 		<a href="http://eccyun.me/blog/article/phper-na-9th/">
 	        ぺちぱな。Q 〜たまには決められた通りに繰り返すのもいい〜 でenchant.jsを使ってゲームづくりのハンズオンをやりました        </a>
@@ -79,17 +80,18 @@
 	<p>ぺちぱな。Q 〜たまには決められた通りに繰り返すのもいい〜<br /><a href="http://atnd.org/events/53496" target="_blank">http://atnd.org/events/53496</a><br /><br /><br />掲題のイベントでハンズオンを行いました。<br />今回のようにフルタイムで行うのは2回目でした。<br /><br />発表資料は下記リンクからどうぞ<br /><br /><a href="http://eccyun.github.io/phper-na-Q/Guide/" target="_blank">http://eccyun.github.io/phper-na-Q/Guide/</a><br /><br />資料は見れる所を準備したので、ここの記事でははじまりのところとか、準備中のところとかその辺のことを残していきます。<br />そういえばgithub pagesが結構便利でした。今後ちょっと使い方とかは模索していこうかなと思っています。<br /><br /><br />●　はじまり<br /><br />もともと、お話があったのは777のちょい後くらいでした。(多分<br />∞の開催前くらいには9はどうしようって話になってきて、具体的にそこから話が動き出したような感じだったと思います。<br /><br />それで「ゲームやろう、enchant.jsで」っていうところにまとまって、調査をはじめていきました。<br /><br />●　プログラムなど<br /><br />ある程度モデルを決めて、それに沿ってどんな感じで作れるかと言うのをやっていくところからはじめました。<br />「Flappy Birdライクなものを作ろう」という話もあったので、取り掛りとしてひとまずそこを目指す事にしました。<br />思ってたより実装は簡単で、これなら結構良いところまでやれそう。みたいな感じになりました。<br />前回もそうでしたけど、プログラムを先に作ってから構成要素を分解して解説が必要なところのリストアップなんかもこの時に行っていました。<br /><br />●　資料の構成<br /><br />前回やった時に、手法に関してはそこそこ良かったかもと思ってたので、今回も同じやり方を採用する事にしました。<br /><br />出来る限り材料を多く並べておいて、それを選びながら後から組んでいくみたいな方式です。<br /><br />前回は喋りの部分が長くなるところが多かったので、手を動かして話を聞いてまた手を動かすまでの話の部分を出来るだけ短くするように気をつけて作ろうと思いました。<br /><br />ものの・・・実際は導入のところは思ってた以上に長くなってしまいました・・・頭の中も真っ白になっていって駄目でした。<br /><br />外枠を簡単にですが、定義してそれをもとに資料を作っていきました。<br /><br />サンプルの内容については、出来るだけ新しい要素は入れないように気をつけました。ゲームの動き方の大きな流れを知る事がテーマだったからです。<br /><br />●　発表<br /><br />前半がしどろもどろ過ぎて、酷かったのですが<br />中盤からは少しだけ落ち着いて話せるようになりました。<br /><br />前回やった時は途中で正直がちへこみするところもあったりして、そういう様子が出ちゃったりしてたんですが、今回はそこまで気落ちする事もなく進めることが出来ました。この辺は少し成長したところかもしれません。<br /><br />とは言っても、まだまだ課題が多く残る結果となってしまいました。<br /><br />参加している皆さんがゴリゴリ作っていってて、いろんな追加機能を入れたりしてる人もいて、そういうのにすごく助けられたところがありました。こういうことを発表した人が言って良いのかわかりませんが・・・。<br /><br />●　総括<br /><br />反省する所はいっぱいあるんですが、今回は進め方に問題がある部分が多すぎて、個人的にはそこが一番の反省点だったように思います。<br />これはいけないみたいなのはありましたし、次回は同じような事にならないようにしたい。そこが変わってくると、またいろいろ変わるところもあると思うので・・・。<br /><br />ただ、ゲームをテーマにやる事が出来たのは非常に嬉しかったです。<br /><br />今回の内容を足がかりにして、時間内に機能を拡張してみたりとかそんなことをしてる人達もいたりして、そういうのを見てると益々そんな気持ちになりました。<br /><br /><br />終わってからは、懇親会でした〜。</p>
 </article>
 <hr>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <h5>Copyright(C) 2012–2017 eccyun</h5>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <h5>Copyright(C) 2012–2017 eccyun</h5>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
