@@ -69,6 +69,22 @@
                             
 <article class="article_block">
 	<h3>
+		<a href="http://eccyun.me/blog/article/lovelive-3rd-live/">
+	        μ's 3rdライブのライブビューイングに参加してきまーす。        </a>
+	</h3>
+	<time class="date">
+		2013/06/15 16:08:03	</time>
+	<div class="category_block">
+		<i class="glyphicon glyphicon-tags"></i>
+		music.eccyun.	</div>
+	<div class="clear">&nbsp;</div>
+	<p>ラブライブ！Official Web Site | μ’s 3rd Anniversary LoveLive!<br /><a href="http://www.lovelive-anime.jp/sp_3rdlive.html">http://www.lovelive-anime.jp/sp_3rdlive.html</a><br /><br />博多会場で希望したら当選したので、明日行ってきま〜す。<br /></p>
+</article>
+
+<hr>
+
+<article class="article_block">
+	<h3>
 		<a href="http://eccyun.me/blog/article/eccyun-recent-130602/">
 	        最近のやつ        </a>
 	</h3>
@@ -207,22 +223,6 @@
 		Objective-C.iOS.	</div>
 	<div class="clear">&nbsp;</div>
 	<p>今日はゲーム開発の件の打ち合わせだったけども<br />いろいろ都合がつかず延期になったので、ぼちぼち調整を進めておりました。<br /><br />調整内容はといいますと、引き続きTwitterAPI1.1への対応です。<br />今日のうちにとりあえずsearch APIを使ったタイムライン生成と<br />ツイート機能を1.1に置き換えました。<br /><br />苦労したところは、search apiを使ったページング処理で<br />これまでは50件おきに読み込んでデータを取るようにしてたんだけども<br />1.1からpageパラメータがなくなっており<br />どうすればいいのか暫くわからずに困っておりました。<br /><br />いろいろ調べた結果。解決策としてはAPIを叩いて取得したJSONを<br />アプリ上で扱いやすいように整形する処理を書いてるんだけども<br />そのタイミングで末尾(50件なら50件目に取得したツイート)のIDを保持しておいて、<br />2ページ目以降はパラメータにmax_idを追加してあげることで対応しました。<br /><br />max_idにセットする時にID-1してセットすることによって<br />そのIDから古いツイートを50件取ってくれるようになるみたいです。<br /><br /><br />それにしてもsocial.frameworkが楽々すぎてつらい。<br />最初からこれで作っとけば良かった。</p>
-</article>
-
-<hr>
-
-<article class="article_block">
-	<h3>
-		<a href="http://eccyun.me/blog/article/ios-app-progress-4/">
-	        iOSアプリケーション進捗(4)        </a>
-	</h3>
-	<time class="date">
-		2013/02/18 01:00:46	</time>
-	<div class="category_block">
-		<i class="glyphicon glyphicon-tags"></i>
-		Objective-C.iOS.	</div>
-	<div class="clear">&nbsp;</div>
-	<p>夕飯をいただいてからぼちぼち進めておりました。<br /><br />とりあえず、ユーザ認証処理を置き換えるところから〜...。<br /><br />Accounts.Frameworkを使ってこの辺実装したけども<br />シンプルでさくっと理解できたので良かった〜。<br />アカウントを選択してから、アプリ内で保持するところまで形になりました。<br /><br />今週中くらいを目処にRTとかリプライとか<br />そういうTwitterの基本機能に手を入れて行く予定です...。<br />土曜日が勉強会なのでそれまでに準備して申請までできればいいなぁ。<br /><br /><br />あと、ソースコードとかもちょいちょい載せていきたいと思う。<br />syntax highlighterとかの機能を追加せんとやね〜。</p>
 </article>
 
 <hr>
