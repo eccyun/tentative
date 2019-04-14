@@ -69,6 +69,38 @@
                             
 <article class="article_block">
 	<h3>
+		<a href="https://eccyun.me/blog/article/appworkshop-17/">
+	        Appworkshop #17をやりました        </a>
+	</h3>
+	<time class="date">
+		2013/02/25 00:52:20	</time>
+	<div class="category_block">
+		<i class="glyphicon glyphicon-tags"></i>
+		event.Objective-C.iOS.	</div>
+	<div class="clear">&nbsp;</div>
+	<p>ここで書くのははじめてですが<br />長崎市の施設をお借りして、月に1度勉強会をやっています。<br /><br />おおまかな流れとしましては、各人がテーマを持ち寄って好きなことをやってみて<br />終わりの1時間で今日やったことをちょっと話してみる流れになっています。<br /><br />「<br />いろんな分野の人が集まって、やってることを聞いて<br />自分が知らなかったことを知ってみたり興味を持ってみよう。<br />」<br /><br />という目的のもと活動しています。<br /><br /><br />今回は、 Twitter API 1.1の対応を中心に進めていきました。<br />BOOL型の取り扱いに悩まされましたが、最終的に解決に至ったので頭もすっきり。<br />気持ちの良い終わり方が出来て良かったです。<br /><br /><br />終わってから一同は懇親会に向かうのであった...。<br /></p>
+</article>
+
+<hr>
+
+<article class="article_block">
+	<h3>
+		<a href="https://eccyun.me/blog/article/ios-app-progress-5/">
+	        iOSアプリケーション進捗(5)        </a>
+	</h3>
+	<time class="date">
+		2013/02/19 01:19:04	</time>
+	<div class="category_block">
+		<i class="glyphicon glyphicon-tags"></i>
+		Objective-C.iOS.	</div>
+	<div class="clear">&nbsp;</div>
+	<p>今日はゲーム開発の件の打ち合わせだったけども<br />いろいろ都合がつかず延期になったので、ぼちぼち調整を進めておりました。<br /><br />調整内容はといいますと、引き続きTwitterAPI1.1への対応です。<br />今日のうちにとりあえずsearch APIを使ったタイムライン生成と<br />ツイート機能を1.1に置き換えました。<br /><br />苦労したところは、search apiを使ったページング処理で<br />これまでは50件おきに読み込んでデータを取るようにしてたんだけども<br />1.1からpageパラメータがなくなっており<br />どうすればいいのか暫くわからずに困っておりました。<br /><br />いろいろ調べた結果。解決策としてはAPIを叩いて取得したJSONを<br />アプリ上で扱いやすいように整形する処理を書いてるんだけども<br />そのタイミングで末尾(50件なら50件目に取得したツイート)のIDを保持しておいて、<br />2ページ目以降はパラメータにmax_idを追加してあげることで対応しました。<br /><br />max_idにセットする時にID-1してセットすることによって<br />そのIDから古いツイートを50件取ってくれるようになるみたいです。<br /><br /><br />それにしてもsocial.frameworkが楽々すぎてつらい。<br />最初からこれで作っとけば良かった。</p>
+</article>
+
+<hr>
+
+<article class="article_block">
+	<h3>
 		<a href="https://eccyun.me/blog/article/ios-app-progress-4/">
 	        iOSアプリケーション進捗(4)        </a>
 	</h3>
@@ -195,38 +227,6 @@
 
 <hr>
 
-<article class="article_block">
-	<h3>
-		<a href="https://eccyun.me/blog/article/phper-na-1st/">
-	        ぺちぱな。始まり - に参加してきました。        </a>
-	</h3>
-	<time class="date">
-		2012/10/17 00:23:49	</time>
-	<div class="category_block">
-		<i class="glyphicon glyphicon-tags"></i>
-		event.php.	</div>
-	<div class="clear">&nbsp;</div>
-	<p>掲題の勉強会に参加してきました。<br /><br />今回は、いつもの雰囲気とはちょっと違って<br /><br />「良かったらお話しとかどうですか。」<br /><br />といつもお世話になっている方よりお誘いを受けまして、参加させて頂くこととなりました。<br /><br />まずは、テーマを決めるところからはじまりまして<br />FuelPHPを使って何かわかりやすいことが出来ないかな〜と考えたところ<br />oilコマンドを使って簡易blogを作ろう。というテーマになりました。<br /><br />そして、当日。<br /><br />これまで、LTとかをやったりしたことはあったのですが<br />30分程の時間を頂いてお話しする機会というのははじめてだったので、大変緊張しました。<br /><br />緊張しながらも事前に考えていたストーリーに沿ったお話が出来た感じではあったのですが<br />皆さんが最も気になっていた点のひとつでもあるFuelPHPの良いところについては<br />非常に薄口な紹介となってしまったのではと感じております。<br /><br />話し方など他にも気掛けるべき点は数多くあるかとは思いますが<br />次回は、もう少しニーズなどから内容をしっかり踏まえた上でテーマを決定して構成を考えていきたいと思いました。<br /><br /><br />こういう機会を経験してみると、自分自身気付くことも多くあり、また他の方の発表を見て勉強になることばかりでした。<br /><br /><br />ありがとうございました。</p>
-</article>
-
-<hr>
-
-<article class="article_block">
-	<h3>
-		<a href="https://eccyun.me/blog/article/tentative/">
-	        てんてーちぶ        </a>
-	</h3>
-	<time class="date">
-		2012/10/07 21:44:17	</time>
-	<div class="category_block">
-		<i class="glyphicon glyphicon-tags"></i>
-		info.	</div>
-	<div class="clear">&nbsp;</div>
-	<p>はじめまして、こんにちは。<br /><br />もともと、自前で開発したブログを運用したい気持ちがずっとあって<br />今回、とあるきっかけでようやく開発・公開する運びとなりました。<br /><br />今後とも、よろしくお願いします。</p>
-</article>
-
-<hr>
-
 <div class="pagination">
 	<span class="previous">
 			<a href="https://eccyun.me/blog/page/12" rel="prev">&laquo;</a>
@@ -252,8 +252,12 @@
 			<a href="#">13</a>
 
 </span>
-<span class="next-inactive">
-			<a href="#" rel="next">&raquo;</a>
+<span>
+			<a href="https://eccyun.me/blog/page/14">14</a>
+
+</span>
+<span class="next">
+			<a href="https://eccyun.me/blog/page/14" rel="next">&raquo;</a>
 
 </span>
 
